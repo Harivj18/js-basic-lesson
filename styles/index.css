@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&family=Redressed&family=Roboto:ital,wght@1,900&display=swap');
+*{
+    font-family: 'Outfit', sans-serif;;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+div h1{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: hsl(0, 0%, 100%);
+}
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px black;
+    margin: auto;
+}
+
+.content-table thead tr{
+    background-color:   hsl(215, 32%, 27%);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th, .content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: 1px #dddddd;
+}
+
+.content-table tbody a{
+    text-decoration: none;
+    border: 3px  rgb(131, 233, 72);;
+    padding: .5rem 1rem;
+    background-color:  hsl(215, 51%, 70%);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+}
+
+.content-table a:hover{
+    color: rgb(8, 20, 1);
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: antiquewhite;
+}
+.content-table tbody tr:nth-of-type(odd){
+    background-color: white;
+}

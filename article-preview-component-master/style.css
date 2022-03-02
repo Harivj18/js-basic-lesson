@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Nunito+Sans:wght@300&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Raleway&display=swap');
+
+
+body {
+    background: hsl(210, 46%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 20px;
+    width: 680px;
+    border-radius: 10px;
+    box-shadow: 10px;
+}
+
+.left-container {
+    background-image: url(images/drawers.jpg);
+    background-size: cover;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.right-container {
+    font-size: 13px;
+    padding: 20px;
+    font-family: 'Manrope', sans-serif;
+    color: hsl(214, 17%, 51%);
+    font-weight: 500;
+}
+
+.right-container h2 {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+.right-container p {
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+
+.author {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-gap: 10px;
+}
+
+.name h4{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    margin: 0px;
+    padding-top: 0px;
+}
+
+.name p {
+    margin: 0px;
+}
+
+.dp img {
+    border-radius: 100%;
+    width: 40px;
+}
+
+.share-icon {
+    transform: translateY(7px) translateX(7px);
+}
+
+.popuptext {
+    display: flex;
+}
+
+.popuptext img {
+    padding: 2px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.popuptext p {
+    padding: 3px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: hsl(210, 46%, 95%);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.popup img {
+    transform: translateX(7px) translateY(7px);
+}
+  
+.popup .popuptext {
+    visibility: hidden;
+    width: 190px;
+    background: hsl(217, 19%, 35%);
+    color:hsl(212, 23%, 69%);
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -20%;
+    margin-left: -80px;
+    letter-spacing: 3px;
+}
+  
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  hsl(217, 19%, 35%) transparent transparent transparent;
+}
+  
+.popup .show {
+    visibility: visible;
+    animation: fadeIn 1s;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Forms</title>
+</head>
+<body>
+    <form name="myform" action="/src/pageG.html">
+        <p>Name : <input type="text" name="name" placeholder="Enter your name here" size="30">
+        </p>
+         <p>Email : <input type="email" name="email" placeholder="Enter your email address" size="30">
+        </p>
+        <p>Age : <input type="number" name="age" placeholder="Enter your name here" size="3">
+        </p>
+        <p>
+            Job : <select name="job" title="joblist">
+                <option >----Select one----
+                    <option value="student">Student</option>
+                    <option value="businessperson">Business Person</option>
+            </select>
+        </p>
+        <p><input type="submit" value="send!" onclick="checkform(); return false;"></p>
+        <p>
+        <button type="button" onclick="open()">B1</button>
+        </p>
+    </form>
+
+    <script type="text/javascript">
+        function checkform () {
+            var formname = document.myform.name;
+            var formemail = document.myform.email;
+            var formage = document.myform.age;
+            var formjob = document.myform.job;
+
+            if (formname.value.indexOf(" ") == -1) {
+                alert ('Please enter your full name.');
+                formname.focus();
+                return;
+            }
+            if (formemail.value.indexOf("@")==-1 ||formemail.value.indexOf(".")==-1 ){
+                alert('Please enter a valid email address');
+                formemail.focus();
+                return;
+            }
+            // let formagevalue = parseInt (formage.value);
+            // if (!(formagevalue > 0)){
+            //     alert('Please enter your age as a valid number');
+            //     formage.focus();
+            //     return;
+            // }
+             if (formagevalue < 8 || formagevalue >58){
+                alert('age must be between 8 and 58!');
+                formage.focus();
+                return;
+            }
+
+            if (formjob.selectedIndex == 0){
+                alert('Please select your job title');
+                formjob.focus();
+                return;
+            }
+            document.myform.submit();
+
+            // function open() {
+            //    var myWindow = window.open("page-k.html","page2","height =300,width =400");
+            // }
+        }
+    </script>
+</body>
+</html>

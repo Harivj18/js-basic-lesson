@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page B</title>
+</head>
+<body>
+    <div>
+        Run the javascript tags at the end before the closing 'body'
+        tag else the dom returns a <b>null</b>.
+        Because when the first script is loaded the para element is not yet loaded.
+    </div>
+
+    <script>
+        console.log('Before');
+        const p1 = document.querySelectorAll('p');
+        console.log(p1)
+    </script>
+
+<p>Hi there,How are you?</p>
+<p>This is second para</p>
+<script>
+    console.log('After');
+    const p = document.querySelector('p');
+    console.log(p)
+</script>
+
+</body>
+</html>

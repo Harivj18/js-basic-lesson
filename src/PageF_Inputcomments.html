@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input comments</title>
+</head>
+<body>
+    <input placeholder="Enter your name here" id="userInput" size="60">
+    <button onclick="usersubmit()">Submit</button>
+    <br>
+    <p><input type="text" id="txt2" placeholder="Enter your city here" onkeyup="usersubmitA('txt2')"></p>
+    <div id="result"></div>
+
+    <script type="text/javascript">
+        document.writeln('<p>Hello</p>');
+
+        function usersubmit () {
+            const UI =document.getElementById('userInput').value;
+            document.getElementById('result').innerHTML = `You typed : ${UI}`;
+        }
+
+        function usersubmitA (v1) {
+            const UI =document.getElementById(v1).value;
+            document.getElementById('result').innerHTML = `You typed : ${UI}`;
+        }
+    </script>
+
+    <script type="text/javascript">
+        let x = 5;
+        /* The browser will break the javascript when it see this tag </script> tag.
+        Everything from tag forward is now being processed as HTML!
+        This is a bad thing!
+        To avoid this you need to use avoiding this tag anywhere in your javascript,
+        and if you must have it,you should break string out like this '</scr'+'ipt>'
+        */
+        document.writeln('</scr'+'ipt>');
+    </script>
+    <script type="text/javascript">
+        const x =15;
+        /* The browser will break the javascript when it see this tag '</scr'+'ipt>' tag */
+        document.writeln(`<p> value is {x}`);
+    </script>
+</body>
+</html>
