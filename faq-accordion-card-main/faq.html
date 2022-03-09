@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="faq.css" />
-    <title>Frontend Mentor | FAQ Accordion Card</title>
-  </head>
-  <body>
-    <div class="top-image"></div>
-    <main class="container">
-      <div class="content">
-        <h1 class="content__title">FAQ</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-        <div class="list">
-          <div class="list__word">
-            <p>How many team members can I invite?</p>
-            <span class="icon"></span>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kumbh+Sans">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+  <div class="main">
+    <div class="flex">
+      <div class="box" id="box"><img src="images/illustration-box-desktop.svg" alt="box"></div>
+      <div class="flex-items flex-bg">
+        <div class="bg"><img id="bg" src="images/bg-pattern-desktop.svg" alt="bg"></div>
+        <div class="woman"><img id="woman" src="images/illustration-woman-online-desktop.svg" alt="woman"></div>
+      </div>
+      <div class="flex-items faq-list">
+        <div class="faq">FAQ</div>
+        <div class="qa">
+          <div class="question">
+            <div>How many team members can I invite?</div>
+            <div class="arrow"><img src="images/icon-arrow-down.svg" alt="arrow"></div>
           </div>
-          <div class="list__description">
-            You can invite up to 2 additional users on the Free plan. There is
-            no limit on team members for the Premium plan.
+          <div class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
+          team members for the Premium plan.</div>
+        </div>
+        <div class="qa">
+          <div class="question">
+            <div>What is the maximum file upload size?</div>
+            <div class="arrow"><img src="images/icon-arrow-down.svg" alt="arrow"></div>
           </div>
-
-          <div class="list__word">
-            <p>What is the maximum file upload size?</p>
-            <span class="icon"></span>
+          <div class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+        </div>
+        <div class="qa">
+          <div class="question">
+            <div>How do I reset my password?</div>
+            <div class="arrow"><img src="images/icon-arrow-down.svg" alt="arrow"></div>
           </div>
-          <div class="list__description">
-            No more than 2GB. All files in your account must fit your allotted
-            storage space.
+          <div class="answer">Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</div>
+        </div>
+        <div class="qa">
+          <div class="question">
+            <div>Can I cancel my subscription?</div>
+            <div class="arrow"><img src="images/icon-arrow-down.svg" alt="arrow"></div>
           </div>
-
-          <div class="list__word">
-            <p>How do I reset my password?</p>
-            <span class="icon"></span>
+          <div class="answer">Yes! Send us a message and we’ll process your request no questions asked.</div>
+        </div>
+        <div class="qa">
+          <div class="question">
+            <div>Do you provide additional support?</div>
+            <div class="arrow"><img src="images/icon-arrow-down.svg" alt="arrow"></div>
           </div>
-          <div class="list__description">
-            Click “Forgot password” from the login page or “Change password”
-            from your profile page. A reset link will be emailed to you.
-          </div>
-
-          <div class="list__word">
-            <p>Can I cancel my subscription?</p>
-            <span class="icon"></span>
-          </div>
-          <div class="list__description">
-            Yes! Send us a message and we’ll process your request no questions
-            asked.
-          </div>
-
-          <div class="list__word">
-            <p>Do you provide additional support?</p>
-            <span class="icon"></span>
-          </div>
-          <div class="list__description">
-            Chat and email support is available 24/7. Phone lines are open
-            during normal business hours.
-          </div>
+          <div class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+  </div>
+  
+</body>
+<script src="script.js"></script>
 </html>

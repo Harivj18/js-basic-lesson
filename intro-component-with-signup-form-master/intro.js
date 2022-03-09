@@ -1,16 +1,14 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable camelcase */
 const inputs = document.querySelectorAll("input:not([type='submit'])")
 
 inputs.forEach(input => {
-  // Add event listener for invalid inputs for all inputs
   input.addEventListener('invalid', addErrorMessage)
 
-  // Check validity on every blur
   input.addEventListener('blur', (event) => {
     input.checkValidity()
   })
 
-  // Remove existing error messages on focus
   input.addEventListener('focus', removeErrorMessage)
 })
 

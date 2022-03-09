@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Nunito+Sans:wght@300&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Raleway&display=swap');
+
+:root{
+    --font1:'Libre Franklin', sans-serif;
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+*{
+    font-family: var(--font1);
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font1);
+    overflow-x: hidden;
+}
+
+.container{
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.logo{
+    margin-bottom: 1.5rem;
+}
+.top h1{
+    font-size: 2.3rem;
+    color: var(--Gray);
+    font-weight: 500;
+}
+.top h1 span{
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 900;
+}
+.top p{
+    margin-bottom: 2rem;
+}
+
+.notify{
+    width: 20%;
+    margin: 0 0 0 .5rem;
+    padding: 1.1rem 2rem;
+    border-radius: 50px;
+    border: 1px solid var(--Gray);
+}
+.notify::placeholder{
+    color: var(--Gray);
+}
+.btn{
+    margin-top: 1.2rem;
+    margin-left: .7rem;
+    background-color: var(--Blue);
+    padding: 1.1rem 3rem;
+    border-radius: 50px;
+    color: white;
+    border-style: none;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.bug{
+    text-align:left;
+    color: red;
+    margin-left: 28rem;
+}
+.invalid{
+    text-align:left;
+    color: red;
+    
+}
+.valid{
+    text-align:left;
+    color: rgb(71, 255, 47) ;
+    font-weight: 500;
+}
+.valid-text{
+    text-align:left;
+    margin-left: 28rem;
+    color: rgb(71, 255, 47) ;
+    font-weight: 500;
+}
+.btn:hover{
+    background-color: lightgreen;
+    transform: translateY(-7px);
+}
+
+.mid{
+    padding-top:5rem ;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.mid img{
+    width: 45%;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+}
+
+.fb, .twitter, .insta{
+    border-radius: 100%;
+    /* border: 10px solid var(--Gray); */
+    margin-bottom: 1rem;
+}
+
+.fb:hover{
+    color: var(--Blue);
+}
+
+.twitter:hover{
+    color: var(--Blue);
+}
+
+.insta:hover{
+    color: var(--Blue);
+}
+
+.footer p{
+    color: var(--Gray);
+    padding-bottom: 2rem;
+}

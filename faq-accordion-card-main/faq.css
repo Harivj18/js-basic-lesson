@@ -1,158 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Nunito+Sans:wght@300&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Raleway&display=swap');
 
-
-* {
-    border: none;
-    margin: 0;
+html {
+    min-height: 100%;
+}
+body {
+    margin: 0 auto;
     padding: 0;
-    outline: none;
     box-sizing: border-box;
-  }
-  
-  html {
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    font-family: 'Kumbh Sans';
     font-size: 12px;
-    min-width: 320px;
-  }
-  
-  body {
-    min-width: 100vw;
-    min-height: 100vh;
+}
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 80px;
+    position: relative;
+}
+.flex {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 150px auto 25px auto;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.445);
+}
+.flex-items {
+    width: 50%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+    padding: 40px 0 0 0;
+}
+.bg, .box, .woman {
+    position: absolute;
+}
+.woman {
+    left: -80px;
+    top: 70px;
+}
+.bg {
+    left: -580px;
+    top: -280px;
+}
+.box {
+    top: 200px;
+    left: -90px;
+    z-index: 6;
+}
+.faq-list {
+    padding: 20px 25px 0 25px;
+    align-self: center;
+    height: 400px;
+}
+.qa {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+    font-size: 14px;
+}
+.faq {
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.question {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Kumbh Sans", sans-serif;
-    overflow-x: hidden;
-  }
-  
-  
-  .top-image {
-    width: 266px;
-    height: 196px;
-    background-image: url(images/illustration-box-desktop.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    background-position:left;
-    top: 24rem;
-    left: 12.8rem;
-  }
-  
-  .container {
-    margin: calc(50px + (196px / 2)) auto 0 auto;
-    width: 95%;
-    background-color: white;
-    border-radius: 2rem;
-    padding-top: 8rem;
-    box-shadow: 0 10px 15px -5px hsl(237, 12%, 33%);
-  }
-  
-  .content {
-    margin: auto;
-    padding: 2rem;
-  }
-  
-  .content__title {
-    color: hsl(238, 29%, 16%);
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  .list {
-    font-weight: 400;
-  }
-  
-  .list__word {
-    margin: 1rem 0;
-    padding: 1rem 0;
-    border-bottom: solid thin hsl(240, 5%, 91%);
+    line-height: 2;
+    padding: 6px 0;
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex-wrap: nowrap;
-    color: hsl(237, 12%, 33%);
-    font-size: 1.1rem;
-  }
-  
-  .list__word  {
-    pointer-events: none;
-  }
-  
-  .list__word--selected {
-    color: hsl(238, 29%, 16%);
-    font-weight: 700;
-    border: none;
-  }
-  
-  .list__word:hover {
-    color: hsl(14, 88%, 65%);
-  }
-  
-  .list__description {
-    border-bottom: solid thin hsl(240, 5%, 91%);
-    color: hsl(240, 6%, 50%);
+}
+.answer {
     display: none;
-    padding-bottom: 1rem;
-    font-size: 1.1rem;
-  }
-  
-  .list__description--selected {
-    display: block;
-  }
-  
-  .icon {
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    min-width: 1rem;
-    min-width: 1rem;
-    background-image: url("images/icon-arrow-down.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-left: 1rem;
-  }
-  
-  .flip-vertically {
-    transform: scaleY(-1);
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      width: 65%;
-      margin: auto;
-      padding: 0;
-      background-image: url("images/illustration-woman-online-desktop.svg"),
-        url("images/bg-pattern-desktop.svg");
-      background-repeat: no-repeat;
-      background-position: calc(-472px / 7) center,
-        calc(-966px / 1.735) calc(-945px / 3);
-      overflow: hidden;
-      max-width: 900px;
+    opacity: 0;
+    transition: .4s;
+    color: rgba(0, 0, 0, 0.521);
+    padding-bottom: 10px;
+    line-height: 1.2;
+}
+.qa:hover {
+    color: hsl(14, 88%, 65%);
+}
+.answer.fade {
+    opacity: 1;
+}
+.weight {
+    font-weight: bolder;
+    color: black;
+    transition: .5s;
+}
+.weight:hover {
+    color: hsl(14, 88%, 65%);
+}
+.arrowup {
+    transform: rotate(180deg);
+}
+@media only screen and (max-width: 700px) {
+    body {
+        max-width: 700px;
     }
-  
-    .content {
-      max-width: 400px;
-      min-width: 400px;
-      margin: 0 0 0 auto;
-      background-color: rgba(255, 255, 255, 0.8);
-      height: 100%;
-      padding: 6rem 5rem;
+    .main {
+        padding: 0 50px;
     }
-  
-    .content__title {
-      text-align: left;
-      font-size: 2.5rem;
+    .flex {
+        display: block;
     }
-  
-    .top-image {
-      width: 191px;
-      height: 184px;
-      background-image: url("images/illustration-box-desktop.svg");
-      background-position: center;
+    .flex-items:nth-child(2) {
+        height: 300px;
     }
-  }
+    .flex-items {
+        width: 90%;
+        margin: 0 auto;
+        overflow: visible;
+    }
+    .flex-items.flex-bg {
+        height: 50px;
+    }
+    .bg {
+        left: 48.5%;
+        top: 52%;
+        transform: translate(-50%, -50%);
+    }
+    .woman {
+        top: -10%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+    }
+    .faq {
+        text-align: center;
+    }
+    .faq-list {
+        height: 430px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    body {
+        max-width: 400px;
+    }
+    .main {
+        padding: 0 20px;
+    }
+    .bg {
+        top: 30%;
+    }
+    .woman {
+        top: -3%;
+    }
+    .bg img, .woman img {
+        width: 110px;
+    }
+    .faq {
+        font-size: 13px;
+    }
+    .qa {
+        font-size: 13px;
+    }
+}

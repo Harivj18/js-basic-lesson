@@ -1,21 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*, * *, *::after, *::before {
+  box-sizing: border-box;
+}
 body {
-  background: url("../images/bg-intro-mobile.png"), #ff7a7a;
+  background: url("./images/bg-intro-mobile.png"), #ff7a7a;
   background-position: center;
   background-repeat: repeat;
   font-size: 1em;
   font-family: "Poppins", sans-serif;
-}
-@media (min-width: 768px) {
-  body {
-    background: url("../images/bg-intro-desktop.png"), #ff7a7a;
-    background-position: center;
-    background-repeat: repeat;
-  }
-}
-
-*, * *, *::after, *::before {
-  box-sizing: border-box;
 }
 
 main {
@@ -28,35 +21,6 @@ main {
   flex-wrap: nowrap;
   margin-left: auto;
   margin-right: auto;
-}
-@media (min-width: 768px) {
-  main {
-    max-width: min(90vw, 1000px);
-    flex-direction: row;
-    gap: 1em;
-  }
-  main > * {
-    width: 50%;
-  }
-}
-
-.content {
-  color: white;
-  text-align: center;
-  padding: 1em;
-}
-.content h1 {
-  line-height: 1.25em;
-}
-@media (min-width: 768px) {
-  .content {
-    text-align: left;
-    padding: 1.5em;
-    font-size: 0.9em;
-  }
-  .content h1 {
-    font-size: 2.5em;
-  }
 }
 
 .signup {
@@ -152,11 +116,40 @@ input[type=submit]:hover {
   font-weight: bolder;
 }
 
-footer {
-  text-align: center;
-  color: white;
-  font-size: smaller;
+@media (min-width: 768px) {
+  main {
+    max-width: min(90vw, 1000px);
+    flex-direction: row;
+    gap: 1em;
+  }
+  main > * {
+    width: 50%;
+  }
 }
-footer a {
-  color: inherit;
+
+.content {
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+.content h1 {
+  line-height: 1.25em;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url("./images/bg-intro-desktop.png"), #ff7a7a;
+    background-position: center;
+    background-repeat: repeat;
+  }
+}
+@media (min-width: 768px) {
+  .content {
+    text-align: left;
+    padding: 1.5em;
+    font-size: 0.9em;
+  }
+  .content h1 {
+    font-size: 2.5em;
+  }
 }
