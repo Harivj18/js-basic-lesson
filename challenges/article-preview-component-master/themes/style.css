@@ -2,38 +2,38 @@
 
 
 body {
+    align-items: center;
     background: hsl(210, 46%, 95%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    justify-content: center;
 }
 
 .container {
     background: white;
+    border-radius: 10px;
+    box-shadow: 10px;
     display: grid;
     grid-template-columns: 40% 1fr;
     grid-gap: 20px;
     width: 680px;
-    border-radius: 10px;
-    box-shadow: 10px;
 }
 
 .left-container {
     background-image: url(images/drawers.jpg);
     background-size: cover;
-    height: 100%;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    height: 100%;
 }
 
 .right-container {
-    font-size: 13px;
-    padding: 20px;
-    font-family: 'Manrope', sans-serif;
     color: hsl(214, 17%, 51%);
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
     font-weight: 500;
+    padding: 20px;
 }
 
 .right-container h2 {
@@ -77,25 +77,25 @@ body {
 }
 
 .popuptext img {
-    padding: 2px;
     margin-top: 5px;
     margin-left: 2px;
+    padding: 2px;
 }
 
 .popuptext p {
-    padding: 3px;
     margin-top: 15px;
     margin-left: 10px;
+    padding: 3px;
 }
 
 .popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
     background: hsl(210, 46%, 95%);
     border-radius: 100%;
-    width: 30px;
+    cursor: pointer;
+    display: inline-block;
     height: 30px;
+    position: relative;
+    width: 30px;
 }
 
 .popup img {
@@ -103,32 +103,32 @@ body {
 }
   
 .popup .popuptext {
-    visibility: hidden;
-    width: 190px;
+    bottom: 125%;
+    border-radius: 5px;
     background: hsl(217, 19%, 35%);
     color:hsl(212, 23%, 69%);
-    text-align: center;
-    border-radius: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
     left: -20%;
-    margin-left: -80px;
     letter-spacing: 3px;
+    margin-left: -80px;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    width: 190px;
+    z-index: 1;
 }
   
 .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color:  hsl(217, 19%, 35%) transparent transparent transparent;
+    content: "";
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    top: 100%;   
 }
   
 .popup .show {
-    visibility: visible;
     animation: fadeIn 1s;
+    visibility: visible;
 }

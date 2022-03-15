@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // Check screen and change images source
 checkScreen() // First load
 

@@ -14,7 +14,7 @@
 
 body {
   background: url('./images/bg-pattern-desktop.svg'),
-    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   background-size: inherit;
   background-position-x: 8rem;
   font-size: 16px;
@@ -32,9 +32,9 @@ body {
 }
 
 .container {
-  padding: 0 12rem;
-  max-width: 55%;
   height: auto;
+  max-width: 55%;
+  padding: 0 12rem;
 }
 
 .logo {
@@ -42,8 +42,8 @@ body {
 }
 
 .image-container {
-  height: 100vh;
   float: right;
+  height: 100vh;
 }
 
 .image-container img.hero-desktop {
@@ -85,8 +85,8 @@ body {
 }
 
 .form-group {
-  margin-top: 2.5rem;
   height: 3rem;
+  margin-top: 2.5rem;
   position: relative;
 }
 
@@ -104,12 +104,12 @@ body {
   border: 0;
   border-radius: 2rem;
   box-shadow: 0 5px 20px 3px hsl(0, 80%, 86%);
-  position: absolute;
-  height: 100%;
-  width: 5rem;
-  top: 0;
-  right: 0;
   cursor: pointer;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5rem;
 }
 
 input::placeholder {
@@ -138,10 +138,10 @@ button:focus {
 }
 
 .icon-error {
+  display: none;
   position: absolute;
+  right: 5.8rem;
   top: 50%;
   transform: translateY(-50%);
-  right: 5.8rem;
-  display: none;
 }
 

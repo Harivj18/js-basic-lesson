@@ -1,98 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Nunito+Sans:wght@300&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Raleway&display=swap');
 
 :root{
-    --font1:'Libre Franklin', sans-serif;
     --Blue: hsl(223, 87%, 63%);
-    --Pale-Blue: hsl(223, 100%, 88%);
-    --Light-Red: hsl(354, 100%, 66%);
     --Gray: hsl(0, 0%, 59%);
+    --font1:'Libre Franklin', sans-serif;
+    --Light-Red: hsl(354, 100%, 66%);
+    --Pale-Blue: hsl(223, 100%, 88%);
     --Very-Dark-Blue: hsl(209, 33%, 12%);
 }
+
 *{
     font-family: var(--font1);
 
 }
+
 body{
-    width: 100vw;
-    height: 100vh;
     font-family: var(--font1);
+    height: 100vh;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 .container{
-    margin-top: 5rem;
     align-items: center;
+    margin-top: 5rem;
     text-align: center;
 }
 
 .logo{
     margin-bottom: 1.5rem;
 }
+
 .top h1{
-    font-size: 2.3rem;
     color: var(--Gray);
+    font-size: 2.3rem;
     font-weight: 500;
 }
+
 .top h1 span{
-    font-size: 2.2rem;
     color: black;
+    font-size: 2.2rem;
     font-weight: 900;
 }
+
 .top p{
     margin-bottom: 2rem;
 }
 
 .notify{
-    width: 20%;
-    margin: 0 0 0 .5rem;
-    padding: 1.1rem 2rem;
     border-radius: 50px;
     border: 1px solid var(--Gray);
+    margin: 0 0 0 .5rem;
+    padding: 1.1rem 2rem;
+    width: 20%;
 }
+
 .notify::placeholder{
     color: var(--Gray);
 }
+
 .btn{
+    background-color: var(--Blue);
+    border-radius: 50px;
+    border-style: none;
+    color: white;
+    font-weight: 600;
     margin-top: 1.2rem;
     margin-left: .7rem;
-    background-color: var(--Blue);
     padding: 1.1rem 3rem;
-    border-radius: 50px;
-    color: white;
-    border-style: none;
-    font-weight: 600;
     transition: all 0.3s ease-in-out;
 }
+
 .bug{
-    text-align:left;
     color: red;
     margin-left: 28rem;
+    text-align:left;
 }
+
 .invalid{
-    text-align:left;
     color: red;
-    
+    text-align:left;
 }
+
 .valid{
-    text-align:left;
     color: rgb(71, 255, 47) ;
     font-weight: 500;
+    text-align:left;
 }
+
 .valid-text{
-    text-align:left;
-    margin-left: 28rem;
     color: rgb(71, 255, 47) ;
     font-weight: 500;
+    margin-left: 28rem;
+    text-align:left;
 }
+
 .btn:hover{
     background-color: lightgreen;
     transform: translateY(-7px);
 }
 
 .mid{
-    padding-top:5rem ;
     align-items: center;
     margin-bottom: 5rem;
+    padding-top:5rem ;
 }
 
 .mid img{
@@ -100,17 +111,16 @@ body{
 }
 
 .social{
+    align-items: center;
+    color: white;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 2rem;
-    color: white;
+    justify-content: center;
 }
 
 .fb, .twitter, .insta{
     border-radius: 100%;
-    /* border: 10px solid var(--Gray); */
     margin-bottom: 1rem;
 }
 

@@ -132,7 +132,7 @@ img {
   color: var(--Dark-Grayish-Blue);
   display: flex;
   flex-direction: column;
-  height: 34rem;
+  height: 32rem;
   justify-content: center;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -166,7 +166,7 @@ img {
   background-image: linear-gradient(hsl(236, 72%, 79%), hsl(236, 72%, 79%));
   box-shadow: none;
   color: white;
-  height: 33rem;
+  height: 36rem;
 }
 
 .learn {
@@ -174,7 +174,7 @@ img {
   padding: 0.7rem 5rem;
 }
 
-.card-1,
+.card-1 .learn:hover,
 .card-3 .learn:hover {
   background: white;
   color: #696fdd;
