@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-new-object */
+/* eslint-disable no-array-constructor */
 /* eslint-disable semi */
 
 const o = new Object();
@@ -11,7 +14,7 @@ console.log('Date =' + d);
 f1();
 
 const o1 = Object.create({ x: 100, y: 200 });
-console.log('x =' + o1.x + ' y =' + o1.y );
+console.log('x =' + o1.x + ' y =' + o1.y);
 console.log(o1);
 
 const o2 = Object.create(null);
@@ -19,4 +22,3 @@ const o2 = Object.create(null);
 const o3 = new Object();
 console.log(o2);
 console.log(o3);
-

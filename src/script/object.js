@@ -1,3 +1,4 @@
+/* eslint-disable dot-notation */
 /* eslint-disable no-unused-vars */
 /* eslint-disable semi */
 const person = {

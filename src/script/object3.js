@@ -1,3 +1,6 @@
+/* eslint-disable no-undef-init */
+/* eslint-disable no-unused-vars */
+/* eslint-disable key-spacing */
 /* eslint-disable no-var */
 /* eslint-disable prefer-const */
 /* eslint-disable quotes */
@@ -75,7 +78,7 @@ console.log(book['main title']);
 delete book['main title'];
 console.log(book['main title']);
 
-let o6 = {x :100};
+let o6 = { x : 100 };
 console.log(o6.x);
 delete o6.x;
 console.log(o6.x);
@@ -83,9 +86,10 @@ console.log(o6.toString);
 delete o6.toString;
 console.log(o6.toString);
 
-delete Object.prototype;
+// not able to delete tostring
+// delete Object.prototype;
 
 var a = 1;
 delete this.a;
-function f1() {};
+function f1 () {};
 delete this.f1();

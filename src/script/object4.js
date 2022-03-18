@@ -1,3 +1,14 @@
+/* eslint-disable func-call-spacing */
+/* eslint-disable new-parens */
+/* eslint-disable no-var */
+/* eslint-disable new-cap */
+/* eslint-disable prefer-regex-literals */
+/* eslint-disable no-array-constructor */
+/* eslint-disable no-new-wrappers */
+/* eslint-disable no-control-regex */
+/* eslint-disable no-new-object */
+/* eslint-disable quotes */
+/* eslint-disable no-new-func */
 /* eslint-disable semi */
 var cody = new Object;
 cody.living = true;
@@ -15,11 +26,11 @@ console.log(myobject);
 const myString = new String('foo');
 console.log(myString);
 
-const person = function (living,age,gender) {
+const person = function (living, age, gender) {
   this.living = living;
   this.age = age;
   this.gender = gender;
-  this.getGender = function () { return this.gender;};
+  this.getGender = function () { return this.gender; };
 };
 
 const smith = new person(true, 33, 'male');
@@ -29,9 +40,9 @@ const myNumber = new Number(23);
 const myString1 = new String('male');
 const myBoolean = new Boolean(false);
 const myObject = new Object();
-const myArray = new Array('foo','bar');
+const myArray = new Array('foo', 'bar');
 const myFunction = new Function ("x", "y", "return x*y");
-const myDate =new Date();
+const myDate = new Date();
 const myRegExp = new RegExp('\bt[a-z]+\b');
 const myError = new Error('Sorry!');
 

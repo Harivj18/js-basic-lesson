@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <script src="./script/demo_a.js?v=1"></script>
+</head>
+<body>
+    <p>
+        <label for="firstValue">X :</label>
+        <input type="text" id="firstValue" placeholder="Enter a number" />
+    </p>
+    <p>
+        <label for="secondValue">Y :</label>
+        <input type="text" id="secondValue" placeholder="Enter a number" />
+    </p>
+    <p>
+        <input type="button" value="Ok" onclick="addition()" />
+        <input type="button" value="Submit" onclick="sum()" />
+        <input type="button" value="add again" onclick="add(101,50)" />
+        <input type="button" value="add with param" onclick="add(document.getElementById('firstValue').value,document.getElementById('secondValue').value)" />
+    </p>
+    <div id="result"></div>
+    <p>
+        <input type="button" value="Problem1" onclick="problem1()" />
+        <input type="button" value="Problem2" onclick="problem2()" />
+        <input type="button" value="Problem3" onclick="problem3()" />
+        <input type="button" value="Print" onclick="printdigits(document.getElementById('firstValue').value)" />
+    </p>
+</body>
+</html>
