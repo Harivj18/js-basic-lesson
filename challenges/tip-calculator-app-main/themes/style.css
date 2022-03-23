@@ -122,7 +122,7 @@ header {
 .people-container img {
     left: 20px;
     position: absolute;
-    top: 20px;
+    margin-top: 18px;
 }
 
 .people-container #input:focus {

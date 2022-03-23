@@ -5,7 +5,6 @@
   --discount-bg: hsl(14, 92%, 95%);
   --discount-text: hsl(15, 100%, 70%);
   --cta-text: hsl(226, 100%, 87%);
-
   --pricing-bg: hsl(0, 0%, 100%);
   --main-bg: hsl(230, 100%, 99%);
   --toggle-button-bg: hsl(223, 50%, 87%);
@@ -15,7 +14,7 @@
 
 body {
   align-items: center;
-  background-image: url(./images/bg-pattern.svg);
+  background-image: url(../images/bg-pattern.svg);
   background-repeat: no-repeat;
   background-color: var(--main-bg);
   color: var(--text);
@@ -31,7 +30,7 @@ body {
 
 .header {
   align-items: center;
-  background-image: url(./images/pattern-circles.svg);
+  background-image: url(../images/pattern-circles.svg);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: 50% 65%;
@@ -91,7 +90,7 @@ body {
   height: 47px;
   border-radius: 50%;
   border: none;
-  background: url(./images/icon-slider.svg);
+  background: url(../images/icon-slider.svg);
   background-color: var(--slider-bg);
   background-repeat: no-repeat;
   background-position: 50%, 50%;
@@ -110,7 +109,7 @@ body {
   height: 47px;
   border-radius: 50%;
   border: none;
-  background: url(./images/icon-slider.svg);
+  background: url(../images/icon-slider.svg);
   background-color: var(--slider-bg);
   background-repeat: no-repeat;
   background-position: 50%, 50%;
@@ -222,7 +221,6 @@ input:checked + .toggle:before {
   transform: translateX(24px);
 }
 
-/* Rounded toggle */
 .toggle.round {
   border-radius: 19px;
 }
@@ -248,7 +246,7 @@ hr {
   margin-bottom: 0;
   padding-bottom: 0;
   border: none;
-  background: url(./images/icon-check.svg);
+  background: url(../images/icon-check.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 10px;
@@ -269,10 +267,6 @@ button {
 }
 button:hover {
   color: var(--pricing-bg);
-}
-
-.attribution {
-  margin: 75px auto 10px auto;
 }
 
 @media (min-width: 701px) {

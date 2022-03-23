@@ -118,7 +118,7 @@ body {
 .arrowup {
     transform: rotate(180deg);
 }
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
     body {
         max-width: 700px;
     }
@@ -195,4 +195,4 @@ body {
     .qa {
         font-size: 13px;
     }
-}
+} */

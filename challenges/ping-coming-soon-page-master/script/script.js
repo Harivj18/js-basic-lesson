@@ -11,13 +11,13 @@ Btnalert.addEventListener('click', e => {
   error = [];
   e.preventDefault();
   const email = Ealert.value;
-  const b = document.querySelector('.bug');
+  const b = document.querySelector('.error');
   if (email == '' || email === undefined) {
     Ealert.classList.add('invalid');
-    error.push('Please provide a valid email address');
+    error.push('Please provide a valid email address !');
   } else if (!email.match(Req)) {
     Ealert.classList.add('invalid')
-    error.push('Please provide a valid email address')
+    error.push('Please provide a valid email address !')
   }
   b.innerText = error[0];
 

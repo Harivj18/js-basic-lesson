@@ -1,147 +1,141 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap');
 
 :root {
-  --red: hsl(0, 93%, 68%);
-  --red-light: hsl(0, 36%, 70%);
-  --dark: hsl(0, 6%, 24%);
+      --dark: hsl(0, 6%, 24%);
+      --red-light: hsl(0, 36%, 70%);
+      --red: hsl(0, 93%, 68%);
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0%;
-  padding: 0%;
-}
+      box-sizing: border-box;
+      margin: 0%;
+      padding: 0%;
+}  
 
 body {
-  background: url('./images/bg-pattern-desktop.svg'),
-  linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  background-size: inherit;
-  background-position-x: 8rem;
-  font-size: 16px;
-  font-family: 'Josefin Sans', sans-serif;
-  height: 100vh;
-  min-height: 100vh;
-}
-
-.top-head {
-  display: flex !important;
+      background-position-x: 8rem;
+      background-size: inherit;
+      background: url('../images/bg-pattern-desktop.svg');
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 16px;
+      height: 100vh;
+      min-height: 100vh;
 }
 
 .top-head-inline {
-  display: inline-flex;
+      display: inline-flex;
 }
 
 .container {
-  height: auto;
-  max-width: 55%;
-  padding: 0 12rem;
+      height: auto;
+      max-width: 55%;
+      padding: 0 12rem;
 }
 
 .logo {
-  margin-top: 3rem;
+      margin-top: 3rem;
 }
 
 .image-container {
-  float: right;
-  height: 100vh;
+      float: right;
+      height: 100vh;
 }
 
 .image-container img.hero-desktop {
-  height: 100%;
+      height: 100%;
 }
 
 .image-container img.hero-mobile {
-  display: none;
+      display: none;
 }
 
 .content {
-  margin-top: 5.5rem;
+      margin-top: 5.5rem;
 }
 
 .content h1 {
-  color: var(--dark);
-  font-family: inherit;
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: 1rem;
-  text-transform: uppercase;
-  line-height: 3.5rem;
+      color: var(--dark);
+      font-family: inherit;
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: 1rem;
+      line-height: 3.5rem;
+      text-transform: uppercase;
 }
 
 .content h1 span {
-  display: block;
+      display: block;
 }
 
 .content h1 span.text-pink {
-  color: var(--red-light);
-  font-weight: 300;
+      color: var(--red-light);
+      font-weight: 300;
 }
 
 .content p {
-  color: var(--red-light);
-  line-height: 1.5rem;
-  margin-top: 1.2rem;
-  font-size: 15px;
+      color: var(--red-light);
+      font-size: 15px;
+      line-height: 1.5rem;
+      margin-top: 1.2rem;
 }
 
 .form-group {
-  height: 3rem;
-  margin-top: 2.5rem;
-  position: relative;
+      height: 3rem;
+      margin-top: 2.5rem;
+      position: relative;
 }
 
 .form-group input {
-  border: 1px solid var(--red-light);
-  border-radius: 2rem;
-  color: var(--red-light);
-  padding: 0.2rem 1.5rem;
-  height: 100%;
-  width: 100%;
+      border-radius: 2rem;
+      border: 1px solid var(--red-light);
+      color: var(--red-light);
+      height: 100%;
+      padding: 0.2rem 1.5rem;
+      width: 100%;
 }
 
 .form-group button {
-  background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-  border: 0;
-  border-radius: 2rem;
-  box-shadow: 0 5px 20px 3px hsl(0, 80%, 86%);
-  cursor: pointer;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 5rem;
+      background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+      border-radius: 2rem;
+      border: 0;
+      box-shadow: 0 5px 20px 3px hsl(0, 80%, 86%);
+      cursor: pointer;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 5rem;
 }
 
 input::placeholder {
-  color: var(--red-light);
+      color: var(--red-light);
 }
 
 input:focus,
 button:focus {
-  outline: none;
+      outline: none;
 }
 
 .text-error {
-  color: var(--red) !important;
-  margin: 0;
-  margin-top: 0.5rem !important;
-  margin-left: 1rem;
-  text-align: left;
+      color: var(--red) !important;
+      margin-left: 1rem;
+      margin-top: 0.5rem !important;
+      margin: 0;
+      text-align: left;
 }
 
 .text-success {
-  color: #44d838 !important;
-  margin: 0;
-  margin-top: 0.5rem !important;
-  margin-left: 1rem;
-  text-align: left;
+      color: #44d838 !important;
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+      margin: 0;
+      text-align: left;
 }
 
 .icon-error {
-  display: none;
-  position: absolute;
-  right: 5.8rem;
-  top: 50%;
-  transform: translateY(-50%);
+      display: none;
+      position: absolute;
+      right: 5.8rem;
+      top: 50%;
+      transform: translateY(-50%);
 }
-

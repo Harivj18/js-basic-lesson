@@ -1,134 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Nunito+Sans:wght@300&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Raleway&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Nunito+Sans:wght@300&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Raleway&display=swap");
 
 body {
-    align-items: center;
-    background: hsl(210, 46%, 95%);
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
+  align-items: center;
+  background: hsl(210, 46%, 95%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
 }
 
 .container {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 10px;
-    display: grid;
-    grid-template-columns: 40% 1fr;
-    grid-gap: 20px;
-    width: 680px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 40% 1fr;
+  width: 680px;
 }
 
 .left-container {
-    background-image: url(../images/drawers.jpg);
-    background-size: cover;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    height: 100%;
+  background-image: url(../images/drawers.jpg);
+  background-size: cover;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 100%;
 }
 
 .right-container {
-    color: hsl(214, 17%, 51%);
-    font-size: 13px;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    padding: 20px;
+  color: hsl(214, 17%, 51%);
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 20px;
 }
 
 .right-container h2 {
-    color: hsl(217, 19%, 35%);
-    font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
 }
 
 .right-container p {
-    line-height: 20px;
-    padding-bottom: 10px;
+  line-height: 20px;
+  padding-bottom: 10px;
 }
 
 .author {
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    grid-gap: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 50px 1fr 50px;
 }
 
-.name h4{
-    color: hsl(217, 19%, 35%);
-    font-weight: 700;
-    margin: 0px;
-    padding-top: 0px;
+.name h4 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+  margin: 0px;
+  padding-top: 0px;
 }
 
 .name p {
-    margin: 0px;
+  margin: 0px;
 }
 
 .dp img {
-    border-radius: 100%;
-    width: 40px;
+  border-radius: 100%;
+  width: 40px;
 }
 
 .share-icon {
-    transform: translateY(7px) translateX(7px);
+  transform: translateY(7px) translateX(7px);
 }
 
 .popuptext {
-    display: flex;
+  display: flex;
 }
 
 .popuptext img {
-    margin-top: 5px;
-    margin-left: 2px;
-    padding: 2px;
+  margin-left: 2px;
+  margin-top: 5px;
+  padding: 2px;
 }
 
 .popuptext p {
-    margin-top: 15px;
-    margin-left: 10px;
-    padding: 3px;
+  margin-left: 10px;
+  margin-top: 15px;
+  padding: 3px;
 }
 
 .popup {
-    background: hsl(210, 46%, 95%);
-    border-radius: 100%;
-    cursor: pointer;
-    display: inline-block;
-    height: 30px;
-    position: relative;
-    width: 30px;
+  background: hsl(210, 46%, 95%);
+  border-radius: 100%;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  width: 30px;
 }
 
 .popup img {
-    transform: translateX(7px) translateY(7px);
+  transform: translateX(7px) translateY(7px);
 }
-  
+
 .popup .popuptext {
-    bottom: 125%;
-    border-radius: 5px;
-    background: hsl(217, 19%, 35%);
-    color:hsl(212, 23%, 69%);
-    left: -20%;
-    letter-spacing: 3px;
-    margin-left: -80px;
-    position: absolute;
-    text-align: center;
-    visibility: hidden;
-    width: 190px;
-    z-index: 1;
+  background: hsl(217, 19%, 35%);
+  border-radius: 5px;
+  bottom: 125%;
+  color: hsl(212, 23%, 69%);
+  left: -20%;
+  letter-spacing: 3px;
+  margin-left: -80px;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  width: 190px;
+  z-index: 1;
 }
-  
+
 .popup .popuptext::after {
-    border-width: 5px;
-    border-style: solid;
-    border-color:  hsl(217, 19%, 35%) transparent transparent transparent;
-    content: "";
-    left: 50%;
-    margin-left: -5px;
-    position: absolute;
-    top: 100%;   
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px;
+  content: "";
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  top: 100%;
 }
-  
+
 .popup .show {
-    animation: fadeIn 1s;
-    visibility: visible;
+  animation: fadeIn 1s;
+  visibility: visible;
 }

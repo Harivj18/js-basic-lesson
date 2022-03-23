@@ -1,236 +1,242 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;600;700;800&family=Montserrat:wght@700&family=Nunito+Sans:wght@300&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Raleway&display=swap");
 
 :root {
-  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
-  --Grayish-Blue: hsl(233, 13%, 49%);
-  --font1: "Montserrat", sans-serif;
-  --Linear-Gradient1: hsl(236, 72%, 79%);
-  --Linear-Gradient2: hsl(237, 63%, 64%);
-  --Light-Grayish-Blue: hsl(234, 14%, 74%);
-  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --font1: "Montserrat", sans-serif;
+    --Linear-Gradient1: hsl(236, 72%, 79%);
+    --Linear-Gradient2: hsl(237, 63%, 64%);
 }
 
 * {
-  font-family: var(--font1);
+    font-family: var(--font1);
 }
 
 body {
-  align-items: center;
-  background-color: var(--Very-Light-Grayish-Blue);
-  justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+    align-items: center;
+    background-color: var(--Very-Light-Grayish-Blue);
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
 }
 
 h1 {
-  color: var(--Grayish-Blue);
-  font-size: 1.8rem;
-  margin: 0 rem 0 0.8rem 0.8rem;
-  text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: 1.8rem;
+    margin: 0 rem 0 0.8rem 0.8rem;
+    text-align: center;
 }
 
 .toggler {
-  align-items: center;
-  color: var(--Light-Grayish-Blue);
-  display: flex;
-  font-size: 1rem;
-  justify-content: center;
-  margin-bottom: 3.5rem;
+    align-items: center;
+    color: var(--Light-Grayish-Blue);
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    margin-bottom: 3.5rem;
 }
 
 .toggle-switch {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
+
 .toggle-switch__label {
-  color: var(--Light-Grayish-Blue);
-  font-size: 0.95rem;
-  display: inline-block;
+    color: var(--Light-Grayish-Blue);
+    display: inline-block;
+    font-size: 0.95rem;
 }
 
 .toggle-switch__toggle {
-  display: inline-block;
-  height: 28px;
-  margin: 0 20px;
-  position: relative;
-  width: 50px;
+    display: inline-block;
+    height: 28px;
+    margin: 0 20px;
+    position: relative;
+    width: 50px;
 }
 
 .toggle-switch__toggle input {
-  opacity: 0;
-  height: 0;
-  width: 0;
+    height: 0;
+    opacity: 0;
+    width: 0;
 }
 
 .toggle-switch__toggle input:checked + .toggle-switch__slider {
-  background-color: var(--Linear-Gradient2);
+    background-color: var(--Linear-Gradient2);
 }
 
 .toggle-switch__toggle input:checked + .toggle-switch__slider:before {
-  -ms-transform: translateX(22px);
-  transform: translateX(22px);
-  -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    -webkit-transform: translateX(22px);
+    transform: translateX(22px);
 }
 
 .toggle-switch__slider {
-  background-color: var(--Light-Grayish-Blue);
-  border-radius: 34px;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 34px;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
 }
 
 .toggle-switch__slider:before {
-  background-color: white;
-  border-radius: 50%;
-  bottom: 3px;
-  content: "";
-  height: 22px;
-  left: 3px;
-  position: absolute;
-  transition: 0.4s;
-  width: 22px;
-  -webkit-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 3px;
+    content: "";
+    height: 22px;
+    left: 3px;
+    position: absolute;
+    transition: 0.4s;
+    width: 22px;
 }
+
 img {
-  position: absolute;
-  z-index: -1;
+    position: absolute;
+    z-index: -1;
 }
 
 .top {
-  height: 40rem;
-  right: 0;
-  top: 0;
-  width: 20rem;
+    height: 40rem;
+    right: 0;
+    top: 0;
+    width: 20rem;
 }
 
 .bottom {
-  bottom: 0;
-  left: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .container {
-  align-items: center;
-  align-self: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 2rem;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem;
 }
 
 .card {
-  border-radius: 10px;
-  box-shadow: 1px 1px 14px hsl(234, 16%, 77%);
-  background-color: white;
-  color: var(--Dark-Grayish-Blue);
-  display: flex;
-  flex-direction: column;
-  height: 32rem;
-  justify-content: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 2rem;
-  text-align: center;
-  width: 15rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 14px hsl(234, 16%, 77%);
+    color: var(--Dark-Grayish-Blue);
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    text-align: center;
+    width: 15rem;
 }
 
 .card__amount {
-  color: #494c5f;
-  font-size: 4.1rem;
-  margin-bottom: 55px;
+    color: #494c5f;
+    font-size: 4.1rem;
+    margin-bottom: 55px;
 }
+
 .card__amount::first-letter {
-  font-size: 60%;
-  vertical-align: middle;
+    font-size: 60%;
+    vertical-align: middle;
 }
+
 .card__amount--hidden {
-  display: none;
+    display: none;
 }
 
 .card-1 {
-  border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .card-3 {
-  border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .card-2 {
-  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(236, 72%, 79%));
-  box-shadow: none;
-  color: white;
-  height: 36rem;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(236, 72%, 79%));
+    box-shadow: none;
+    color: white;
+    height: 36rem;
 }
 
 .learn {
-  margin-top: 1rem;
-  padding: 0.7rem 5rem;
+    margin-top: 1rem;
+    padding: 0.7rem 5rem;
 }
 
 .card-1 .learn:hover,
 .card-3 .learn:hover {
-  background: white;
-  color: #696fdd;
+    background: white;
+    color: #696fdd;
 }
+
 .card-2 .learn:hover {
-  background: #696fdd;
-  color: white;
+    background: #696fdd;
+    color: white;
 }
 
 .card-1 .learn {
-  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
-  border-style: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  display: block;
+    background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    display: block;
 }
 
 .card-3 .learn {
-  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
-  border-style: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  display: block;
+    background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    display: block;
 }
 
 .card-2 .learn {
-  background: var(--Very-Light-Grayish-Blue);
-  border-radius: 5px;
-  border-style: none;
-  cursor: pointer;
-  color: #696fdd;
-  display: block;
+    background: var(--Very-Light-Grayish-Blue);
+    border-radius: 5px;
+    border-style: none;
+    color: #696fdd;
+    cursor: pointer;
+    display: block;
 }
 
 .box {
-  border-top: var(--Grayish-Blue) solid 1px;
-  padding: 2px;
+    border-top: var(--Grayish-Blue) solid 1px;
+    padding: 2px;
 }
 
 .send {
-  border-bottom: var(--Grayish-Blue) solid 1px;
-  padding: 2px;
+    border-bottom: var(--Grayish-Blue) solid 1px;
+    padding: 2px;
 }
 
 .card-2 .box {
-  border-top: var(--Very-Light-Grayish-Blue) solid 1px;
-  padding: 2px;
+    border-top: var(--Very-Light-Grayish-Blue) solid 1px;
+    padding: 2px;
 }
 
 .card-2 .send {
-  border-bottom: var(--Very-Light-Grayish-Blue) solid 1px;
-  padding: 2px;
+    border-bottom: var(--Very-Light-Grayish-Blue) solid 1px;
+    padding: 2px;
 }
 
 .card-2 .card__amount {
-  color: white;
+    color: white;
 }
+
