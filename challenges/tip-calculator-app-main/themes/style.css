@@ -1,238 +1,199 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;600;700;800&family=Montserrat:wght@700&family=Nunito+Sans:wght@300&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Raleway&family=Space+Mono:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;600;700;800&family=Montserrat:wght@700&family=Nunito+Sans:wght@300&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Raleway&family=Space+Mono:wght@700&display=swap");
 :root {
-    --Dark-grayish-cyan: hsl(186, 14%, 43%);
-    --Grayish-cyan: hsl(184, 14%, 56%);
-    --font1:'Space Mono', monospace;;
-    --Light-grayish-cyan: hsl(185, 41%, 84%);
-    --Strong-cyan: hsl(172, 67%, 45%);
-    --Very-dark-cyan: hsl(183, 100%, 15%);
-    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
-    --White: hsl(0, 0%, 100%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+
+  --font1: "Space Mono", monospace;
 }
 
 body {
-    background-color: var(--Light-grayish-cyan);
+  background-color: var(--Light-grayish-cyan);
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    margin-block: 50px;
+  display: flex;
+  justify-content: center;
+  margin-block: 50px;
 }
 
 .container {
-    background-color:white;
-    border-radius: 15px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  height: 490px;
+  margin: 0 auto;
+  width: 920px;
 }
 
 .left-section {
-    padding: 30px;
+  padding: 30px;
+  width: 50%;
 }
 
 .label {
-    color: var(--Dark-grayish-cyan);
-    font-family: var(--font1);
-    font-weight: 700;
-    font-size: 14px;
-    margin-bottom: 20px;
+  color: var(--Dark-grayish-cyan);
+  font-family: var(--font1);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .input-container {
-    position: relative;
+  position: relative;
 }
 
 .input-container #input {
-    border-radius: 7px;
-    border: none;
-    background-color:var(--Very-light-grayish-cyan);
-    cursor: pointer;
-    color: var(--Very-dark-cyan);
-    font-size: 18px;
-    font-size: 16px;
-    font-family: var(--font1);
-    font-weight: 700;
-    margin-block: 0 40px;
-    padding: 10px;
-    text-align: right;
-    width: 350px;
+  background-color: var(--Very-light-grayish-cyan);
+  border-radius: 7px;
+  border: none;
+  color: var(--Very-dark-cyan);
+  cursor: pointer;
+  font-family: var(--font1);
+  font-size: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-block: 0 40px;
+  padding: 10px;
+  text-align: right;
+  width: 379px;
 }
 
 .input-container #input:focus {
-    outline: none;
+  outline: none;
 }
 
 .input-container img {
-    left: 15px;
-    position: absolute;
-    top: 15px;
+  left: 15px;
+  position: absolute;
+  top: 15px;
 }
 
 .btns-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
-    margin-bottom: 40px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 0px;
 }
 
 .btns-container .btn {
-    border: none;
-    border-radius: 5px;
-    background-color: var(--Very-dark-cyan);
-    color: var(--White);
-    cursor: pointer;
-    font-size: 20px;
-    font-family: var(--font1);
-    font-weight: 700;
-    padding: 10px;
+  background-color: var(--Very-dark-cyan);
+  border-radius: 5px;
+  border: none;
+  color: var(--White);
+  cursor: pointer;
+  font-family: var(--font1);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
 }
 
 .btns-container .active {
-    background-color: var(--Strong-cyan);
-    color: black;
+  background-color: var(--Strong-cyan);
+  color: black;
 }
 
 .btns-container #customTip {
-    border : none;
-    background-color: hsl(189, 41%, 97%);
-    border-radius: 5px;
-    padding : 10px;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 130px;
 }
 
-.people-container{
-    position: relative;
+.people-container {
+  position: relative;
 }
 
 .people-container #people {
-    border-radius: 7px;
-    border: none;
-    background-color: var(--Very-light-grayish-cyan);
-    cursor: pointer;
-    color: var(--Very-dark-cyan);
-    font-size: 16px;
-    font-family: var(--font1);
-    font-weight: 700;
-    margin-block: 10px 40px;
-    padding: 10px;
-    text-align: right;
-    width: 350px;
+  background-color: var(--Very-light-grayish-cyan);
+  border-radius: 7px;
+  border: none;
+  color: var(--Very-dark-cyan);
+  cursor: pointer;
+  font-family: var(--font1);
+  font-size: 16px;
+  font-weight: 700;
+  margin-block: 10px 40px;
+  padding: 10px;
+  text-align: right;
+  width: 380px;
 }
 
 .people-container img {
-    left: 20px;
-    position: absolute;
-    margin-top: 18px;
+  left: 20px;
+  margin-top: 18px;
+  position: absolute;
+  top: 7px;
 }
 
 .people-container #input:focus {
-    outline: none;
+  outline: none;
 }
 
 .right-section {
-    background-color: var(--Very-dark-cyan);
-    border: none;
-    border-radius: 20px;
-    padding-block: 50px 20px;
-    padding-inline: 20px;
+  background-color: var(--Very-dark-cyan);
+  border-radius: 20px;
+  border: none;
+  padding-block: 50px 20px;
+  padding-inline: 20px;
+  width: 50%;
 }
 
 .info {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+  padding-inline: 40px;
 }
 
 .info p {
-    color:white;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: var(--font1);
+  color: white;
+  font-family: var(--font1);
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .info span {
-    color: var(--Grayish-cyan);
+  color: var(--Grayish-cyan);
 }
 
 .info .tipvalue {
-    color: var(--Strong-cyan);
-    font-size: 30px;
-    font-family: var(--font1);
-    font-weight: 700;
+  color: var(--Strong-cyan);
+  font-family: var(--font1);
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .reset {
-    border: none;
-    border-radius:5px;
-    background-color:var(--Strong-cyan);
-    color: var(--Very-dark-cyan);
-    cursor: pointer;
-    font-size: 20px;
-    font-family: var(--font1);
-    font-weight: 700;
-    padding: 15px;
-    width: 280px;
+  background-color: var(--Strong-cyan);
+  border-radius: 5px;
+  border: none;
+  bottom: 40px;
+  color: var(--Very-dark-cyan);
+  cursor: pointer;
+  font-family: var(--font1);
+  font-size: 20px;
+  font-weight: 700;
+  left: 47rem;
+  margin: 0 auto;
+  padding: 15px;
+  position: absolute;
+  width: 350px;
 }
 
-@media screen and (min-width : 1200px) {
-    .container {
-        display: flex;
-        height : 490px;
-        margin : 0 auto;
-        width: 920px;
-    }
+.people-container #input {
+  bottom: 20px;
+  position: relative;
+  width: 379px;
+}
 
-    .left-section {
-        width: 50%;
-    }
-
-    .right-section {
-        margin-block : 35px;
-        margin-right: 35px;
-        padding-block : 50px 20px;
-        padding-inline : 20px;
-        position: relative;
-        width : 50%;
-    }
-
-    .info {
-        padding-inline : 40px;
-    }
-
-    .reset {
-        bottom: 40px;
-        left : 40px;
-        margin :  0 auto;
-        position: absolute;
-        width : 355px;
-    }
-
-    .input-container #input {
-        width : 379px;
-    }
-
-    .people-container #input {
-        bottom : 20px;
-        position: relative;
-        width : 379px;
-    }
-
-    .people-container img {
-        position: absolute;
-        top : 7px;
-    }
-
-    .btns-container {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-bottom: 0;
-    }
-
-    .btn {
-        width: 115px;
-    }
-
-    .btns-container > input {
-        width : 95px;
-    }
-} 
+.btn {
+  width: 135px;
+}

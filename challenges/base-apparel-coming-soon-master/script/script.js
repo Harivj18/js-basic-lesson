@@ -15,18 +15,15 @@ btn.addEventListener('click', e => {
 
   if (email == '' || email === undefined) {
     errors.push('Please provide us your email')
-    // show error
     iconError.style.display = 'block'
     textError.innerText = errors[0]
   } else if (!email.match(RegEmail)) {
     errors.push('Please provide us your valid email')
-    // show error icon
     iconError.style.display = 'block'
     textError.innerText = errors[0]
   }
 
   if (!errors.length > 0) {
-    // hide error icon
     iconError.style.display = 'none'
     textError.classList.add('text-success')
     textError.innerText = 'Thanks for subscribing.We\'ll keep in touch with mail.'

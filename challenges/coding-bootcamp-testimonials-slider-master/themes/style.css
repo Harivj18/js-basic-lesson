@@ -29,7 +29,8 @@ img {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-  }
+}
+
 .curve {
       background-image: url(../images/pattern-curve.svg);
       background-position: left bottom;

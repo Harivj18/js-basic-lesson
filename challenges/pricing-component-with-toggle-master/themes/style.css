@@ -76,7 +76,7 @@ h1 {
 }
 
 .toggle-switch__slider {
-    -webkit-transition: 0.4s;
+    transition: 0.4s;
     background-color: var(--Light-Grayish-Blue);
     border-radius: 34px;
     bottom: 0;
@@ -89,7 +89,7 @@ h1 {
 }
 
 .toggle-switch__slider:before {
-    -webkit-transition: 0.4s;
+    transition: 0.4s;
     background-color: white;
     border-radius: 50%;
     bottom: 3px;

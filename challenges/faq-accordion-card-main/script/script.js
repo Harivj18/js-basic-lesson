@@ -30,26 +30,25 @@ function changeImg (n, e) {
   boxS.style.display = e
 }
 
-// Show - hide content
 const questionClick = document.getElementsByClassName('question')
 const displayAnswer = document.getElementsByClassName('answer')
 const arrowChange = document.getElementsByClassName('arrow')
 
-showHidecontent() // Run
+showHidecontent() 
 
 function showHidecontent () {
   for (let i = 0; i < questionClick.length; i++) {
-    questionClick[i].addEventListener('click', function () { // Add event where need to click
-      if (displayAnswer[i].style.display === 'block') { // Check content
+    questionClick[i].addEventListener('click', function () { 
+      if (displayAnswer[i].style.display === 'block') { 
         displayAnswer[i].style.display = 'none'
         removeClass(i)
         return
       }
-      for (let j = 0; j < displayAnswer.length; j++) { // If open a new content, the other will closed
+      for (let j = 0; j < displayAnswer.length; j++) { 
         displayAnswer[j].style.display = 'none'
         removeClass(j)
       }
-      if (displayAnswer[i].style.display === 'none') { // Check content
+      if (displayAnswer[i].style.display === 'none') { 
         addClass(i)
         displayAnswer[i].style.display = 'block'
       }
@@ -57,17 +56,17 @@ function showHidecontent () {
   }
 }
 
-function removeClass (n) { // Remove class
+function removeClass (n) { 
   displayAnswer[n].classList.remove('fade')
   questionClick[n].classList.remove('weight')
   arrowChange[n].classList.remove('arrowup')
 }
 
-function addClass (n) { // Add class
+function addClass (n) {
   questionClick[n].classList.add('weight')
   arrowChange[n].classList.add('arrowup')
   const delay = 300
-  const fadeAnimation = setTimeout(function () { // Add delay to create a fade animation
+  const fadeAnimation = setTimeout(function () {
     displayAnswer[n].classList.add('fade')
   }, delay)
 }
