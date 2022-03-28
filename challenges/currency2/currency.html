@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./themes/currency.css" />
-    <title>Currency Converter</title>
-</head>
+    <title>Module-JS-Challenges</Module-JS-Challenges></title>
+    <link
+      rel="stylesheet"
+      href="./themes/currency.css"
+    />
+  </head>
 
-<body>
-    <table class="container">
+  <body>
+    <form>
+      <h1>Currency-Converter</h1>
+      <table align="center">
         <tr>
-            <td><input type="number" id="amount1" value="0.00" onchange="show()" /></td>
-            <td>
-                <select name="from-country" id="currency1"></select>
-            </td>
+          <td><input type="number" value="" id="amount" /></td>
+          <td>
+            <select id="primary" class="input"></select>
+          </td>
         </tr>
         <tr>
-            <td>in</td>
-            <td>
-                <select name="to-country" id="currency2"></select>
-            </td>
+          <td>in</td>
+          <td>
+            <select id="secondary" class="input"></select>
+          </td>
         </tr>
         <tr>
-            <td>is</td>
-            <td id="result">
-                
-            </td>
+          <td>is</td>
+          <td id="result">$0</td>
         </tr>
-    </table>
-    <script src="./script/elements.js" type="module"></script>
-</body>
+      </table>
+    </form>
+  </body>
+  <script src="./script/elements.js" type="module"></script>
 </html>

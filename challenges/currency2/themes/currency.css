@@ -1,45 +1,57 @@
-* {
-  margin-top: 20px;
-  text-align: center;
-}
 body {
-  font-size: 19px;
+  background-color: rgb(162, 171, 201);
+
 }
-table,
-th,
-td {
-  border: 5px solid white;
-  background-color: rgb(247, 247, 122);
-  text-align: center;
-  height: 70px;
-  width: 50%;
-}
-td,
-th {
-  background-color: rgb(247, 247, 122);
-}
-.container {
-  margin-top: 10rem;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 8px;
-  box-shadow: -7px 2px 11px 3px;
+h1 {
+  margin: auto;
 }
 input {
-  background-color: rgb(247, 247, 122);
-  border: transparent;
-  height: 50%;
-  width: 50%;
-  font-size: 19px;
+  appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
 }
 select {
-  background-color: rgb(247, 247, 122);
-  border: transparent;
-  height: 30%;
-  width: 75%;
-  font-size: 19px;
+  appearance: none;
+  background-color: yellow;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  text-align: center;
 }
-option {
+th,
+td {
+  appearance: none;
+  background-color: yellow;
+  font-weight: 1000;
+  padding: 30px;
+}
+table {
   background-color: white;
+  box-shadow: 5px 5px 8px black;
+  height: 100px;
+  margin-top: 15%;
+  margin: auto;
+  padding: 8px;
+  table-layout: fixed;
+  text-align: center;
+  width: 600px;
+  margin:auto;
+  margin-top: 5%;
+}
+select{
+  background-color: yellow;
+  scroll-behavior: smooth;
+}
+h1{
+  text-align: center;
+  margin-top: auto;
+  margin-top: 8%;
+ 
+}
+input{
+  text-align: center;
+  font-weight: 700;
 }

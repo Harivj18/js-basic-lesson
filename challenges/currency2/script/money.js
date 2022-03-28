@@ -1,5 +1,5 @@
-export function show() {
-    const amt = document.getElementById("amount1").value;
-    const display = document.getElementById("result");
-    display.innerHTML = "$" +parseFloat(amt * 4.2) ;
-  }
+export function myFunction() {
+  var currency = document.getElementById('amount');
+  var result = parseInt(Math.ceil(Math.random() * 100) * currency.value);
+  document.getElementById('result').innerHTML = result;
+}

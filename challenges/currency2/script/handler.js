@@ -1,10 +1,11 @@
-export function generateOptions(options) {
-  return Object.entries(options)
+export function getOptions(data) {
+  return Object.entries(data)
+
     .map(
-      ([currencyCode, currencyName]) =>
-        `<option value="${currencyCode}">${
-          currencyCode == "MSG" ? " " : currencyCode
-        }  ${currencyName}</option>`
+      ([country, currency]) =>
+        `<option value="${country}">${
+          country == 'MSG' ? ' ' : country
+        }  ${currency}</option>`
     )
-    .join("");
+    .join('');
 }
