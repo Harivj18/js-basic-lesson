@@ -12,7 +12,7 @@ input {
 
 select {
   appearance: none;
-  background-color: rgb(248, 248, 96);
+  background-color: yellow;
   background: transparent;
   border: none;
   font-weight: bold;
@@ -22,7 +22,7 @@ select {
 th,
 td {
   appearance: none;
-  background-color: rgb(255, 255, 94);
+  background-color: yellow;
   border-radius: 7px;
   font-weight: 1000;
   padding: 30px;
