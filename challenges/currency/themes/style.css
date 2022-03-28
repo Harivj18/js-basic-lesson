@@ -1,0 +1,43 @@
+body {
+    width: 100vw;
+    background-color: antiquewhite;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 13rem;
+    width: 33%;
+    height: 15rem;
+}
+
+#input {
+    margin-top: 1rem;
+    width: 9.5rem;
+    height: 2.2rem;
+}
+
+#fromValue {
+    width: 10rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+}
+#toValue {
+    width: 10rem;
+    height: 2.5rem;
+}
+
+p {
+    border: 1px solid;
+    width: 8rem;
+    height: 2rem;
+    padding-left: 2rem;
+    padding-top: .5rem;
+}
+
+td {
+    background-color:white;
+    
+}
