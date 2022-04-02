@@ -1,0 +1,34 @@
+.formGroup {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+hr {
+    width: 700px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    width: 210px;
+}
+
+form {
+    width: 400px;
+}
+
+button {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    margin-left: 8rem;
+    padding: .5rem 1rem;
+}
+
+.check {
+    margin-left: 12rem;
+}

@@ -1,0 +1,80 @@
+<div class="home">
+    <h1>RTPCR - Registration Form</h1>
+    <hr>
+    <form  name="rtpcrForm" >
+        <div class="formGroup">
+            <label for="Name">Name</label>
+            <input type="text" placeholder="Enter Your Name here" [formControl]="fname" name="fname">
+            <!-- <p class="error" *ngIf="fname.errors?.['minlength']">Min 3 characters is required</p> -->
+        </div>
+        <div class="check">
+            <p *ngIf="fname.errors?.['required']">*Name is required</p>
+        </div>
+        <div class="formGroup">
+            <label for="Aadhar">Aadhar</label>
+            <input type="number" placeholder="Enter Your Aadhar" [formControl]="aadhar" name="aadhar">
+        </div>
+        <div class="check">
+            <p *ngIf="aadhar.errors?.['required']">*Aadhar is required</p>
+            <p *ngIf="aadhar.errors?.['minlength']">Min 3 characters is required</p>
+        </div>
+        <div class="formGroup">
+            <label for="date-of-birth">Date Of Birth :</label>
+            <input type="date" name="dob" id="dob" [formControl]="dob">
+        </div>
+        <div class="check">
+            <p *ngIf="dob.errors?.['required']">*DOB is required</p>
+        </div>
+        <div class="formGroup">
+            <label for="gender">Gender :</label>
+            <input type="text" name="gender" id="gender" placeholder="Gender" [formControl]="gender">
+        </div>
+        <div class="check">   
+            <p *ngIf="gender.errors?.['required']">*Gender is required</p>
+        </div>
+        <div class="formGroup">
+            <label for="city">City :</label>
+            <input type="text" name="city" id="city" placeholder="Enter City" [formControl]="city">
+        </div>
+        <div class="check">   
+            <p *ngIf="city.errors?.['required']">*City is required</p>
+        </div>
+        <div class="formGroup">
+            <label for="date-of-test">Date Of Test :</label>
+            <input type="date" name="date" id="date" [formControl]="date">
+        </div>
+        <div class="check">   
+            <p *ngIf="date.errors?.['required']">*Date is required</p>
+        </div>
+        <div class="formGroup">
+            <label for="time-of-test">Time Of Test :</label>
+            <input type="datetime" name="time" id="time" [formControl]="time">
+        </div>
+        <div class="check">   
+            <p *ngIf="time.errors?.['required']">*City is required</p>
+        </div>
+        <div class="formGroup">
+            <label for="lab">Lab Name :</label>
+            <input type="text" name="lab" id="lab" placeholder="Enter lab name" [formControl]="lab">
+        </div>
+        <div class="check">   
+            <p *ngIf="lab.errors?.['required']">*Lab name is required</p>
+        </div>
+        <div class="formGroup">
+            <label for="report">Report Number :</label>
+            <input type="text" name="report" id="report" placeholder="Report number" [formControl]="report">
+        </div>
+        <div class="check">   
+            <p *ngIf="report.errors?.['required']">*Report Number is required</p>
+        </div>
+        <div class="formGroup">
+            <label for="result">Result :</label>
+            <input type="text" name="result" id="result" placeholder="Your Result" [formControl]="result">
+        </div>
+        <div class="check">   
+            <p *ngIf="result.errors?.['required']">*Result is required</p>
+        </div>
+        <button (click)="add()">Add</button>
+      <!-- <button class="btn-primary" type="submit">Register</button> -->
+    </form>
+</div>
