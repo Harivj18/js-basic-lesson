@@ -1,4 +1,4 @@
-<div class="home">
+<div class="container">
     <h1>RT-PCR REGISTRATION FORM</h1>
     <hr>
     <form class="myform" [formGroup]="fg" (ngSubmit)="onSubmit()">
@@ -71,3 +71,100 @@
             </div>
     </form>
 </div>
+<div class="search">
+    <input type="text" id="find" (keyup)="removefield()" placeholder="Enter name to search">
+    <input type="submit" (click)="search()" id="submit">
+    <div id="msg"></div>
+  </div>
+<div>
+    <h2>DATABASE</h2>
+</div>
+  <div class="tab">
+    <table id="table">
+      <tr>
+        <th *ngFor="let column of headers">
+          {{column}}
+        </th>
+      </tr>
+      <tr *ngFor="let value of store">
+        <td>
+          {{ value.fname }}
+        </td>
+        <td>
+          {{ value.lname }}
+        </td>
+        <td>
+          {{ value.dob }}
+        </td>
+        <td>
+          {{ value.gender }}
+        </td>
+        <td>
+          {{ value.city }}
+        </td>
+        <td>
+          {{ value.date }}
+        </td>
+        <td>
+          {{ value.time }}
+        </td>
+        <td>
+          {{ value.lab }}
+        </td>
+        <td>
+          {{ value.report }}
+        </td>
+        <td>
+          {{ value.result }}
+        </td>
+        <td>
+          {{ value.aadhar }}
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="tab">
+    <table id="table1">
+      <tr>
+        <th *ngFor="let column of headers">
+          {{column}}
+        </th>
+      </tr>
+      <tr *ngFor="let value of searchvalue" id="tr">
+        <td>
+          {{ value.fname }}
+        </td>
+        <td>
+          {{ value.lname }}
+        </td>
+        <td>
+          {{ value.dob }}
+        </td>
+        <td>
+          {{ value.gender }}
+        </td>
+        <td>
+          {{ value.city }}
+        </td>
+        <td>
+          {{ value.date }}
+        </td>
+        <td>
+          {{ value.time }}
+        </td>
+        <td>
+          {{ value.lab }}
+        </td>
+        <td>
+          {{ value.report }}
+        </td>
+        <td>
+          {{ value.result }}
+        </td>
+        <td>
+          {{ value.aadhar }}
+        </td>
+      </tr>
+    </table>
+  </div>
+<!-- </div> -->

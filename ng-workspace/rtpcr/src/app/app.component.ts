@@ -10,7 +10,10 @@ import { FormControl } from '@angular/forms';
 export class AppComponent {
   store:any=[];
   title='hello';
-
+  input: any;
+  headers=["First Name","Last Name","Date of Birth","Gender","City","Date Of Test","Time Of Test","Lab Name",
+  "Report Number","Result","Aadhar Number"];
+  searchvalue:any=[];
  ngOnInit(): void {}
   fg = new FormGroup({
   fname:new FormControl('',[Validators.required]),
@@ -32,7 +35,12 @@ export class AppComponent {
       console.log(this.store.push(this.fg.value));
       console.log(this.store);
       this.fg.reset();
+      (<HTMLDivElement>document.getElementById("msg")).style.display="none";
   }
-
+  
+  removefield(){
+    (<HTMLTableRowElement>document.getElementById('tr')).style.display="none";
+  }
 }
+
 
