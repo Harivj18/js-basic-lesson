@@ -11,8 +11,8 @@ export class AppComponent {
   store:any=[];
   title='hello';
   input: any;
-  headers=["First Name","Last Name","Date of Birth","Gender","City","Date Of Test","Time Of Test","Lab Name",
-  "Report Number","Result","Aadhar Number"];
+  headers=["First Name","Aadhar Number","Date of Birth","Gender","City","Date Of Test","Time Of Test","Lab Name",
+  "Report Number","Result"];
   searchvalue:any=[];
  ngOnInit(): void {}
   fg = new FormGroup({
@@ -37,7 +37,19 @@ export class AppComponent {
       this.fg.reset();
       (<HTMLDivElement>document.getElementById("msg")).style.display="none";
   }
-  
+  search(){
+    console.log((<HTMLDivElement>document.getElementById("find")).innerHTML);
+    if((<HTMLDivElement>document.getElementById("find")).innerText==""){
+      (<HTMLDivElement>document.getElementById("msg")).innerText="Sorry!! No records found in our database☹";
+    }
+    this.input=(<HTMLInputElement>document.getElementById("find")).value;
+    this.store.forEach((element:any) => {
+      if(element.aadhar==this.input){
+        this.searchvalue.push(element);
+      }
+    });
+    (<HTMLInputElement>document.getElementById("find")).value="";
+  }  
   removefield(){
     (<HTMLTableRowElement>document.getElementById('tr')).style.display="none";
   }

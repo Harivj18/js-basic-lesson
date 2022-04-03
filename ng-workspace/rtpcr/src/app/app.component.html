@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>RT-PCR REGISTRATION FORM</h1>
+    <h1>RT-PCR FORM</h1>
     <hr>
     <form class="myform" [formGroup]="fg" (ngSubmit)="onSubmit()">
             <div class="field">
@@ -74,10 +74,11 @@
 <div class="search">
     <input type="text" id="find" (keyup)="removefield()" placeholder="Enter name to search">
     <input type="submit" (click)="search()" id="submit">
-    <div id="msg"></div>
   </div>
+  <div id="msg"></div>
+
 <div>
-    <h2>DATABASE</h2>
+    <h2>FORM-DATABASE</h2>
 </div>
   <div class="tab">
     <table id="table">
@@ -91,8 +92,8 @@
           {{ value.fname }}
         </td>
         <td>
-          {{ value.lname }}
-        </td>
+            {{ value.aadhar }}
+          </td>
         <td>
           {{ value.dob }}
         </td>
@@ -116,9 +117,6 @@
         </td>
         <td>
           {{ value.result }}
-        </td>
-        <td>
-          {{ value.aadhar }}
         </td>
       </tr>
     </table>
@@ -135,8 +133,8 @@
           {{ value.fname }}
         </td>
         <td>
-          {{ value.lname }}
-        </td>
+            {{ value.aadhar }}
+          </td>
         <td>
           {{ value.dob }}
         </td>
@@ -161,9 +159,7 @@
         <td>
           {{ value.result }}
         </td>
-        <td>
-          {{ value.aadhar }}
-        </td>
+        
       </tr>
     </table>
   </div>
