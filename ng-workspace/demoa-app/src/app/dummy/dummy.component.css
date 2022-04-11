@@ -1,0 +1,12 @@
+div{
+    margin-top: 3rem;
+}
+
+.notavl {
+    color:red;
+    text-decoration: double;
+}
+
+.avlstyle {
+    color: green;
+}

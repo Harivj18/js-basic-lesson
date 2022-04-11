@@ -34,4 +34,5 @@ export function myFunction() {
       }
     }
   }
+  document.getElementById("find").value = "";
 }

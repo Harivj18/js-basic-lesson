@@ -51,7 +51,7 @@ export class AppComponent {
     (<HTMLInputElement>document.getElementById("find")).value="";
   }  
   removefield(){
-    (<HTMLTableRowElement>document.getElementById('tr')).style.display="none";
+    this.searchvalue=[];
   }
 }
 

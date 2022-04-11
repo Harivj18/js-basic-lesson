@@ -1,0 +1,11 @@
+<div class="page-header">
+    <div class="list-group">
+        <div *ngFor="let item of books;let idx=index;let isFirst=first" class="list-group-item">
+
+            <button class="btn btn-secondary">Count : <span class="badge" [innerText]="idx+1"></span></button>
+            <app-book [book]="item"></app-book>
+            <app-tab [book]="item" [idx]="idx"></app-tab>
+        </div>
+       
+    </div>
+</div>

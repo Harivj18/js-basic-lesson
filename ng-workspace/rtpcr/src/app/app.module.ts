@@ -4,12 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TablesComponent } from './tables/tables.component';
+// import { TablesComponent } from './tables/tables.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TablesComponent
   ],
   imports: [
     BrowserModule,
@@ -18,6 +17,6 @@ import { TablesComponent } from './tables/tables.component';
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent,TablesComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

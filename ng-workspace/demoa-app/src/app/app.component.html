@@ -1,11 +1,43 @@
 <h1 class="text-warning">Welcome to Angular {{title}} from {{location}}</h1>
 <hr>
-<div>
+<!-- <div>
     <app-boxa labelValue="Location" [data]="location" (OnBoxDataChange)="onBoxValueChange($event)"></app-boxa>
 </div>
 <div>
     <app-boxa [data]="location"></app-boxa>
-</div>
+</div> -->
 <div>
-    <app-customer-form></app-customer-form>
+    <!-- <app-customer-form></app-customer-form> -->
+    <!-- <app-footer></app-footer> -->
+    <!-- <app-boxa></app-boxa> -->
+    <!-- <app-employee-form></app-employee-form> -->
+    <!-- <app-book-list></app-book-list> -->
+    <!-- <app-dummy></app-dummy> -->
+    <!-- <app-book-catlog></app-book-catlog> -->
+    <app-menu></app-menu>
+    <router-outlet></router-outlet>
 </div>
+<!-- <app-dummy [subjectChild]="subjectParent"></app-dummy> -->
+<!-- 
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <ul class="nav nav-tabs">
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{'exact':true}">
+                    <a routerLink="/customerform" class="active">Customer Form /</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/employeeform"> Employee Form /</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/dummy" > Dummy </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <router-outlet></router-outlet>
+    </div>
+</div> -->

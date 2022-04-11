@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MathsService } from '../service/maths.service';
 
 @Component({
   selector: 'app-customer-form',
@@ -7,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerFormComponent implements OnInit {
   customerModel: any;
-  constructor() { }
-
+  constructor(public _maths:MathsService) { }
+  fname:any;
   ngOnInit(): void {
     this.customerModel = {
       firstName: '',
@@ -21,4 +22,10 @@ export class CustomerFormComponent implements OnInit {
       console.log(customerFormGroup.value);
     }
   }
+  increase() {
+    this._maths.add();
+  }
+  // onchange(){
+  //   this.fname = this.customerModel.firstName.value();
+  // }
 }

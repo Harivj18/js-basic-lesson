@@ -1,0 +1,44 @@
+<h1>Employee Details - 
+    <button type="button" class="btn btn-info" (click)="gocontact()">Go to Employee Form</button>
+</h1>
+
+<div class="emp-details">
+    <input type="text" class="text-data" [(ngModel)]="empName">
+    <div>Employee Name :{{empName}}</div>
+    <div>Employee Id :{{empId}}</div>
+    <div>Employee Status :{{empStatus}}</div>
+    <button type="button" [disabled]="btnToggle" (click)="show()" class="btn btn-warning mt-3">Click Me!!</button>
+</div>
+
+<div>
+    <h2>Book Details</h2>
+    <!-- <input type="text" class="text-data"> -->
+    <div *ngIf="books;then BookAvailable; else noBookAvailable">
+        Books exist in the datatbase!!!
+    </div>
+
+    <ng-template #BookAvailable>
+        <div *ngFor="let item of books;index as i">
+            <div [ngSwitch]="item.bookStatus">
+                <!-- <div *ngSwitchCase="'Available'" [ngStyle]="{'color':'green' }">
+                  Avaialable: {{i}} -{{item.subName}}
+                </div> -->
+                <div [ngClass]="{'notavl':item.bookStatus == 'Not Available','avlstyle':item.bookStatus == 'Available'}">
+                   Available: {{i}}-{{item.subName}}
+                </div>
+                <div *ngSwitchDefault>
+                    Default- {{item.subName}}
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template #noBookAvailable>
+            No books are Avaialable
+    </ng-template>
+    <div *ngFor="let std of subjectChild">
+        <p>{{std.id}}</p>
+        <p>{{std.name}}</p>
+    </div>
+    {{_maths.counter}}
+    <button type="button" (click)="increase()" class="btn btn-primary">Increment</button>
+</div>

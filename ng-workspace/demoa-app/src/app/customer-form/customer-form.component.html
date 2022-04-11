@@ -8,6 +8,7 @@
         <input class="form-control" placeholder="Enter First Name" name="fname"
         [ngModel]="customerModel.firstName" required minlength="3"
         #firstNameFormControl="ngModel">
+        <!-- <div (change)="onchange()">Data entered: {{fname}} </div> -->
         <div class="help-block" *ngIf="firstNameFormControl.invalid && firstNameFormControl.touched">
             <span *ngIf="firstNameFormControl.errors?.['required']">
                 <strong>First Name is required</strong>
@@ -64,3 +65,7 @@
     is untouched : {{firstNameFormControl.untouched}}
     is touched : {{firstNameFormControl.touched}}
 </pre>
+<div>
+    {{_maths.counter}}
+</div>
+<button type="button" (click)="increase()" class="btn btn-primary">Increment</button>
