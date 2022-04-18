@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'rtpcr-form'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('rtpcr-form');
+    expect(app['title']).toEqual('rtpcr-form');
   });
 
   it('should render title', () => {

@@ -9,7 +9,8 @@ export class DataTableComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+
   }
 
 }
