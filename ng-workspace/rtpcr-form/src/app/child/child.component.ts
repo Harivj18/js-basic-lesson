@@ -5,11 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.css']
 })
-export class ChildComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class ChildComponent  {
+  name1:any='Angular';
+  show=false;
+  constructor (){
+  }
+  
+  toggle (){
+      this.show=!this.show;      
   }
 
 }
