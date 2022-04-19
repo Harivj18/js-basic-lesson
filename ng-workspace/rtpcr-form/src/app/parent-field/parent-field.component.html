@@ -1,5 +1,6 @@
-<p>Parent works!!</p>
-<app-child></app-child>
+<p>parent works!</p>
 <div>
-    <ng-content></ng-content>
+    <ng-content *ngIf="check"></ng-content>
+    <app-child></app-child>
+    <button (click)="checking()">check</button>
 </div>

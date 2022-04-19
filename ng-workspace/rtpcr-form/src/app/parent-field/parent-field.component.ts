@@ -1,42 +1,46 @@
-import { Component, Input, NgModule, OnChanges, OnDestroy, OnInit,DoCheck,AfterContentInit,AfterViewInit, ViewChild } from '@angular/core';
+import { Component, Input, NgModule, OnChanges, OnDestroy, OnInit,DoCheck,AfterContentInit,AfterViewInit,AfterViewChecked, ViewChild,AfterContentChecked } from '@angular/core';
 import { ChildComponent } from '../child/child.component';
-
 @Component({
   selector: 'app-parent-field',
-  template: `<h1>Hello{{name1}}</h1>`,
+  templateUrl: './parent-field.component.html',
   styleUrls: ['./parent-field.component.css']
 })
-export class ParentFieldComponent implements OnInit,OnDestroy,OnChanges,DoCheck,AfterContentInit {
-  @Input () name1:any='Angular';
-  // @ViewChild(ChildComponent) viewchild:ChildComponent;
-  constructor() { }
-
-  ngOnInit(): void {
-    console.log('ngOnInit is working');
-    
+export class ParentFieldComponent implements OnInit,OnDestroy,OnChanges,DoCheck,AfterContentInit,AfterViewInit,AfterViewChecked,AfterContentChecked {
+  @Input()name:string='';
+  @ViewChild(ChildComponent) viewChild!:ChildComponent;
+  check:boolean=false;
+    constructor() { }
+    ngOnChanges() {
+      console.log("parent NgOnChange called");
+    }
+    ngOnInit(): void {
+      console.log("parent NgOninit called");
+    }
+    ngDoCheck(): void {
+      console.log('parent NgDocheck is called');
+    }
+    ngAfterContentInit(): void {
+      console.log("parent NgAfterContentInit called");
+    }
+    ngAfterContentChecked(): void {
+      console.log("parent NgAfterContentChecked is called");
+    }
+    ngAfterViewChecked(): void {
+      console.log("parent NgAfterViewChecked called")
+    }
+    ngAfterViewInit(): void {
+      console.log("parent afterview init is called");
+      setTimeout(()=>{
+        this.viewChild.child="mahesh";
+      },0);
+    }
+    ngOnDestroy(): void {
+      this.name="done";
+      console.log(this.name);
+      console.log("parent NgOnDestroy called");
+      
+    }
+    checking(){
+      this.check=!this.check;
+    }
   }
-
-  ngOnDestroy() {
-    console.log("ondestroyed is working!");
-  }
-
-  ngOnChanges(){
-    console.log("onchanges is working!");
-  }
-
-  ngDoCheck(): void {
-    console.log("Docheck is working!");
-  }
-
-  ngAfterContentInit(): void {
-    console.log("AfterContent Init is working!");    
-  }
-
-  // ngAfterViewInit(): void {
-  //   console.log("AfterViewInit is working");
-  //   setTimeout(()=>{
-  //     this.viewchild.child="hari";
-  //   },0);
-  // }
-  
-}

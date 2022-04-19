@@ -8,7 +8,6 @@ const routes: Routes = [
   { path:'customerform', component:CustomerFormComponent},
   { path:'employeeform', component:EmployeeFormComponent},
   { path:'dummy', component: DummyComponent}
-
 ];
 
 @NgModule({

@@ -1,2 +1,16 @@
 <!-- <app-parent-field>hello</app-parent-field> -->
-<app-child></app-child>
+<!-- <app-child></app-child> -->
+<div>
+    <p>Hello guys! {{name}}</p>
+</div>
+<input type="text" [(ngModel)]="name">
+<button (click)="showOrHide()">Show/Hide</button>
+<app-parent-field [name]="name" *ngIf="value">
+    hello how are you?
+    <div>
+        <p>Hello guys! {{name}}</p>
+    </div>
+</app-parent-field>
+<router-outlet></router-outlet>
+<a routerLink="parent" routerLinkActive="text-danger"> parent </a>
+<a routerLink="child" routerLinkActive="text-danger"> child </a>
